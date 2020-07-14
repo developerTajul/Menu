@@ -3,10 +3,143 @@ body {
 }
 
 ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
 
+.main-menu{
+	background-color: #1abc9c;
+}
+.main-menu:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.main-menu ul{}
+.main-menu ul li{
+	float: left;
+	position: relative;
+}
+.main-menu ul li a{
+	color: #fff;
+	text-transform: capitalize;
+	text-decoration: none;
+	padding: 15px 20px;
+	display: block;
+}
+.main-menu ul li:hover a{
+	background-color: #16a085;
+}
+
+/** dropdown 1 **/
+.main-menu ul ul{
+	min-width: 200px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: .3s;
+}
+.main-menu ul > li:hover > ul{
+	visibility: visible;
+	opacity: 1;
+}
+.main-menu ul ul li{
+	float: none;
+}
+.main-menu ul ul li a{}
+.main-menu ul ul li:hover a{
+	background-color: #34495e;
+}
+
+/** dropdown 2 **/
+.main-menu ul ul ul{
+	top: 0;
+	left: 100%;
+}
+.main-menu ul ul ul li{}
+.main-menu ul ul ul li a{}
+.main-menu ul ul ul li:hover a{
+	background-color: #9b59b6;
 }
 
 
+/** dropdown 3 **/
+.main-menu ul ul ul ul{}
+.main-menu ul ul ul ul li{}
+.main-menu ul ul ul ul li a{}
+.main-menu ul ul ul ul li:hover a{
+	background-color: #2ecc71;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
 .main-menu{
 	background: #3498db;
 }
@@ -36,7 +169,7 @@ ul {
 	background-color: #2980b9;
 }
 
-/** submenu 1 **/
+
 .main-menu ul ul{
 	width: 200px;
 	position: absolute;
@@ -55,7 +188,7 @@ ul {
 .main-menu ul ul li:hover a{
 	background: #34495e;
 }
-/** submenu 2 **/
+
 .main-menu ul ul ul{
 	top: 0;
 	left: 100%;
@@ -65,3 +198,4 @@ ul {
 .main-menu ul ul ul li:hover a{
 	background-color: #34495e;
 }
+**/
